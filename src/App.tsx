@@ -20,7 +20,7 @@ const App = () => {
             효율적이고 유지보수가 용이한 React 애플리케이션을 구축하기 위한
             핵심 디자인 패턴
           </p>
-          <Link to="https://www.github.com" className={styles.githubButton}>
+          <Link to="https://github.com/miinhho/react-design-pattern/tree/main/src/components" className={styles.githubButton}>
             📁 예제 코드 보기
           </Link>
         </section>
