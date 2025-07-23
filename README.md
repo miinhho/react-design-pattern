@@ -10,7 +10,7 @@
 
 <br>
 
-<img alt="https://github.com/miinhho/react-design-pattern/tree/main/public/page.webp" width="100" height="250">
+<img src="https://github.com/miinhho/react-design-pattern/blob/main/public/page.png" width="100" height="250">
 
 </img>
 
