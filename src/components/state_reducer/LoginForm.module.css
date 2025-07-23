@@ -1,0 +1,40 @@
+.form {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  margin: 0 auto;
+}
+
+.form input {
+  margin-bottom: 10px;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: lightgray;
+  border-color: gray;
+  color: white;
+}
+
+.form button:hover {
+  background-color: gray;
+}
+
+.userStatus {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.userStatus p {
+  margin: 0;
+}
+
+.userStatus button {
+  margin-top: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
