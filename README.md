@@ -8,5 +8,11 @@
 2. [Custom Hook](./src/components/custom_hooks/README.md)
 3. [State Reducer](./src/components/state_reducer/README.md)
 
+<br>
+
+<img alt="https://github.com/miinhho/react-design-pattern/tree/main/public/page.webp" width="100" height="250">
+
+</img>
+
 ### 참고자료
 - https://refine.dev/blog/react-design-patterns/
