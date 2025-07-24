@@ -33,7 +33,20 @@
 
 <img src="https://github.com/miinhho/react-design-pattern/blob/main/public/page.png" width="1000" height="750"></img>
 
-### 참고자료
+## 실행 방법
+
+ 
+```bash
+git clone https://github.com/miinhho/react-design-pattern.git
+cd react-design-pattern
+pnpm i
+```
+
+```bash
+pnpm dev
+```
+
+## 참고자료
 - https://refine.dev/blog/react-design-patterns/
 - https://patterns-dev-kr.github.io/
 
