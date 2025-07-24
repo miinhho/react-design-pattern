@@ -1,16 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { css } from "@emotion/react"
 import { useState } from "react"
+import styles from "./Toggle.module.css"
 import { ToggleContext } from "./ToggleContext"
 import { useToggle } from "./useToggle"
-
-const containerStyles = css`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-`
 
 const Toggle = ({ children }: React.PropsWithChildren) => {
   const [on, setOn] = useState(false)
@@ -18,7 +10,7 @@ const Toggle = ({ children }: React.PropsWithChildren) => {
 
   return (
     <ToggleContext.Provider value={{ on, toggle }}>
-      <div css={containerStyles}>
+      <div className={styles.container}>
         {children}
       </div>
     </ToggleContext.Provider>
@@ -37,14 +29,15 @@ Toggle.Off = ({ children }: React.PropsWithChildren) => {
 
 Toggle.Button = () => {
   const { toggle } = useToggle()
-  return <button onClick={toggle} css={{
-    backgroundColor: "black",
-    color: "white",
-    padding: "8px 16px",
-    borderRadius: "4px",
-    border: "none",
-    cursor: "pointer",
-  }}>Toggle</button>
+
+  return (
+    <button
+      className={styles.toggleButton}
+      onClick={toggle}
+    >
+      Toggle
+    </button>
+  )
 }
 
 export default Toggle
