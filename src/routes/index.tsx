@@ -3,6 +3,7 @@ import App from "../App";
 import ContainerPresentation from "../components/container_presentation/TodoListContainer";
 import CompositionHook from "../components/custom_hooks/TodoListContainer";
 import Header from "../components/data_provider/Header";
+import JohnDoe from "../components/hoc/JohnDoe";
 import LoginForm from "../components/state_reducer/LoginForm";
 import HomeWrapper from "../HomeWrapper";
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/data-provider",
     Component: HomeWrapper(<Header />),
+  },
+  {
+    path: "/hoc",
+    Component: HomeWrapper(<JohnDoe />),
   }
 ]);
 

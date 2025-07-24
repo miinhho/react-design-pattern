@@ -3,13 +3,13 @@ import { useTheme } from "./useTheme";
 
 const containerStyles = css`
   display: flex;
-  justifyItems: center;
-  alignItems: center;
+  justify-items: center;
+  align-items: center;
   padding: 10px;
 `
 
 const buttonStyles = css`
-  marginLeft: 10px;
+  margin-left: 10px;
 `
 
 const Navbar = () => {
@@ -23,12 +23,12 @@ const Navbar = () => {
     <>
       <div css={css`
         ${containerStyles}
-        backgroundColor: ${theme === "dark" ? "#333" : "#f0f0f0"};
+        background-color: ${theme === "dark" ? "#333" : "#f0f0f0"};
       `}
       >
-        <h1 css={{
-          color: theme === "dark" ? "#fff" : "#000"
-        }}>
+        <h1 css={css`
+          color: ${theme === "dark" ? "#fff" : "#000"};
+        `}>
           Hello Navbar
         </h1>
       </div>
