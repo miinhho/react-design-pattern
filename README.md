@@ -7,6 +7,7 @@
 1. [Container & Presentation](./src/components/container_presentation/README.md)
 2. [Custom Hook](./src/components/custom_hooks/README.md)
 3. [State Reducer](./src/components/state_reducer/README.md)
+4. [Data Provider](./src/components/data_provider/README.md)
 
 <br>
 

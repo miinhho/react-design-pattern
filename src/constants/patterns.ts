@@ -18,6 +18,12 @@ export const patterns = [
     path: "/state-reducer",
   },
   {
+    title: "Provider 패턴",
+    description:
+      "Context API 를 활용하여 상태를 관리하고 데이터를 전달하는 패턴입니다.",
+    path: "/data-provider",
+  },
+  {
     title: "HOC (Higher-Order Component)",
     description:
       "컴포넌트를 인자로 받아 새로운 컴포넌트를 반환하는 함수로, 코드 재사용을 위한 패턴입니다.",
@@ -34,11 +40,5 @@ export const patterns = [
     description:
       "여러 컴포넌트가 함께 작동하여 하나의 기능을 완성하는 패턴입니다.",
     path: "/compound-component",
-  },
-  {
-    title: "Provider 패턴",
-    description:
-      "Context API 를 활용하여 전역 상태를 관리하고 데이터를 전달하는 패턴입니다.",
-    path: "/provider",
   },
 ];
