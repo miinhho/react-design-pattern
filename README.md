@@ -4,10 +4,30 @@
 
 ## Chapter
 
-1. [Container & Presentation](./src/components/container_presentation/README.md)
-2. [Custom Hook](./src/components/custom_hooks/README.md)
-3. [State Reducer](./src/components/state_reducer/README.md)
-4. [Data Provider](./src/components/data_provider/README.md)
+1. [Container & Presentation](./src/components/container_presentation/README.md)  
+
+2. [Custom Hook](./src/components/custom_hooks/README.md)  
+
+3. [State Reducer](./src/components/state_reducer/README.md)  
+
+4. [Data Provider](./src/components/data_provider/README.md)  
+
+5. [HOC](./src/components/hoc/README.md)
+
+6. [Compound](./src/components/compound/README.md)
+
+7. Memoziation  
+    - [useCallback](https://ko.react.dev/reference/react/useCallback)  
+    - [useMemo](https://ko.react.dev/reference/react/useMemo)  
+    - [memo](https://ko.react.dev/reference/react/memo)  
+
+8. Lazy import
+    - [lazy](https://ko.react.dev/reference/react/lazy)  
+9. Transition
+    - [useTransition](https://ko.react.dev/reference/react/useTransition)
+    - [startTransition](https://ko.react.dev/reference/react/startTransition)
+10. Optimistic UI
+    - [useOptimistic](https://ko.react.dev/reference/react/useOptimistic)
 
 <br>
 
@@ -18,3 +38,8 @@
 ### 참고자료
 - https://refine.dev/blog/react-design-patterns/
 - https://patterns-dev-kr.github.io/
+
+<br>
+
+> [!Note]
+> `forwardRef` 를 통해 하위 컴포넌트의 DOM 에 접근하는 패턴은 React 19 ref 를 prop 으로 전달이 가능해졌고, 이후 `forwardRef` 가 deprecated 예정이기 때문에 제외했다.

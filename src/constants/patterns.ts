@@ -30,15 +30,9 @@ export const patterns = [
     path: "/hoc",
   },
   {
-    title: "Render Props 패턴",
-    description:
-      "컴포넌트 간에 코드를 공유하기 위해 함수 prop 을 사용하는 패턴입니다.",
-    path: "/render-props",
-  },
-  {
-    title: "Compound Component 패턴",
+    title: "Compound 패턴",
     description:
       "여러 컴포넌트가 함께 작동하여 하나의 기능을 완성하는 패턴입니다.",
-    path: "/compound-component",
+    path: "/compound",
   },
 ];

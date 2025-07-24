@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import App from "../App";
+import ToggleButton from "../components/compound/ToggleButton";
 import ContainerPresentation from "../components/container_presentation/TodoListContainer";
 import CompositionHook from "../components/custom_hooks/TodoListContainer";
 import Header from "../components/data_provider/Header";
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/hoc",
     Component: HomeWrapper(<JohnDoe />),
+  },
+  {
+    path: "/compound",
+    Component: HomeWrapper(<ToggleButton />),
   }
 ]);
 
