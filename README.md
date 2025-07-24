@@ -16,3 +16,4 @@
 
 ### 참고자료
 - https://refine.dev/blog/react-design-patterns/
+- https://patterns-dev-kr.github.io/
