@@ -31,9 +31,7 @@
 
 <br>
 
-<img src="https://github.com/miinhho/react-design-pattern/blob/main/public/page.png" width="1000" height="750">
-
-</img>
+<img src="https://github.com/miinhho/react-design-pattern/blob/main/public/page.png" width="1000" height="750"></img>
 
 ### 참고자료
 - https://refine.dev/blog/react-design-patterns/
@@ -42,4 +40,4 @@
 <br>
 
 > [!Note]
-> `forwardRef` 를 통해 하위 컴포넌트의 DOM 에 접근하는 패턴은 React 19 ref 를 prop 으로 전달이 가능해졌고, 이후 `forwardRef` 가 deprecated 예정이기 때문에 제외했다.
+> `forwardRef` 를 통해 하위 컴포넌트의 DOM 에 접근하는 패턴은 React 19 ref 를 prop 으로 전달이 가능해졌고, `forwardRef` 가 **deprecated 예정**이기 때문에 제외했습니다.
