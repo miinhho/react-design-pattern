@@ -5,6 +5,7 @@ import ContainerPresentation from "../components/container_presentation/TodoList
 import CompositionHook from "../components/custom_hooks/TodoListContainer";
 import Header from "../components/data_provider/Header";
 import JohnDoe from "../components/hoc/JohnDoe";
+import DefaultCounter from "../components/render_props/DefaultCounter";
 import LoginForm from "../components/state_reducer/LoginForm";
 import HomeWrapper from "../HomeWrapper";
 
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/compound",
     Component: HomeWrapper(<ToggleButton />),
+  },
+  {
+    path: "/render-props",
+    Component: HomeWrapper(<DefaultCounter />),
   }
 ]);
 

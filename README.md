@@ -14,19 +14,21 @@
 
 5. [HOC](./src/components/hoc/README.md)
 
-6. [Compound](./src/components/compound/README.md)
+6. [Render Props](./src/components/render_props/README.md)
 
-7. Memoziation  
+7. [Compound](./src/components/compound/README.md)
+
+8. Memoziation  
     - [useCallback](https://ko.react.dev/reference/react/useCallback)  
     - [useMemo](https://ko.react.dev/reference/react/useMemo)  
     - [memo](https://ko.react.dev/reference/react/memo)  
 
-8. Lazy import
+9. Lazy import
     - [lazy](https://ko.react.dev/reference/react/lazy)  
-9. Transition
+10. Transition
     - [useTransition](https://ko.react.dev/reference/react/useTransition)
     - [startTransition](https://ko.react.dev/reference/react/startTransition)
-10. Optimistic UI
+11. Optimistic UI
     - [useOptimistic](https://ko.react.dev/reference/react/useOptimistic)
 
 <br>

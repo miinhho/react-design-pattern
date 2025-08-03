@@ -35,4 +35,10 @@ export const patterns = [
       "여러 컴포넌트가 함께 작동하여 하나의 기능을 완성하는 패턴입니다.",
     path: "/compound",
   },
+  {
+    title: "Render Props 패턴",
+    description:
+      "전달받은 함수를 사용해 무엇을 렌더링할지 결정하는 패턴입니다.",
+    path: "/render-props",
+  },
 ];
