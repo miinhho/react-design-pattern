@@ -20,8 +20,8 @@ export const Flyout = (props) => {
 
   return (
     <div>
-      {React.Children.map(props.children, (child) => 
-        React.cloneElement(child, { open, toggle })
+      {React.Children.map(props.children, (child) =>
+        React.cloneElement(child, { open, toggle }),
       )}
     </div>
   )
@@ -31,10 +31,12 @@ export const Flyout = (props) => {
 ## 장점과 단점?
 
 ### 장점
+
 - 사용하는 쪽에서 동작 구현에 필요한 상태가 드러나지 않아 걱정 없이 사용할 수 있습니다.
 - 자식 컴포넌트들을 일일히 import 할 필요 없이 기능을 이용할 수 있습니다.
 
 ### 단점
+
 - `React.Children.map` 을 사용할 때 쓰는 쪽에서 자식 컴포넌트를 약속된 형태로 넘겨야 하는 제약이 생깁니다.
 
 ```js

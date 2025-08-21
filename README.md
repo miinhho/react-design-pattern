@@ -1,16 +1,16 @@
 # React Design Pattern
 
-> React 를 어떻게 더 잘 쓸 수 있을까? 더 좋은 방법은 없을까?  
+> React 를 어떻게 더 잘 쓸 수 있을까? 더 좋은 방법은 없을까?
 
 ## Chapter
 
-1. [Container & Presentation](./src/components/container_presentation/README.md)  
+1. [Container & Presentation](./src/components/container_presentation/README.md)
 
-2. [Custom Hook](./src/components/custom_hooks/README.md)  
+2. [Custom Hook](./src/components/custom_hooks/README.md)
 
-3. [State Reducer](./src/components/state_reducer/README.md)  
+3. [State Reducer](./src/components/state_reducer/README.md)
 
-4. [Data Provider](./src/components/data_provider/README.md)  
+4. [Data Provider](./src/components/data_provider/README.md)
 
 5. [HOC](./src/components/hoc/README.md)
 
@@ -18,13 +18,13 @@
 
 7. [Compound](./src/components/compound/README.md)
 
-8. Memoziation  
-    - [useCallback](https://ko.react.dev/reference/react/useCallback)  
-    - [useMemo](https://ko.react.dev/reference/react/useMemo)  
-    - [memo](https://ko.react.dev/reference/react/memo)  
+8. Memoziation
+   - [useCallback](https://ko.react.dev/reference/react/useCallback)
+   - [useMemo](https://ko.react.dev/reference/react/useMemo)
+   - [memo](https://ko.react.dev/reference/react/memo)
 
 9. Lazy import
-    - [lazy](https://ko.react.dev/reference/react/lazy)  
+   - [lazy](https://ko.react.dev/reference/react/lazy)
 10. Transition
     - [useTransition](https://ko.react.dev/reference/react/useTransition)
     - [startTransition](https://ko.react.dev/reference/react/startTransition)
@@ -37,7 +37,6 @@
 
 ## 실행 방법
 
- 
 ```bash
 git clone https://github.com/miinhho/react-design-pattern.git
 cd react-design-pattern
@@ -49,6 +48,7 @@ pnpm dev
 ```
 
 ## 참고자료
+
 - https://refine.dev/blog/react-design-patterns/
 - https://patterns-dev-kr.github.io/
 

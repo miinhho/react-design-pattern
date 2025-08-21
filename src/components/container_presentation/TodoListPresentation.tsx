@@ -1,13 +1,11 @@
-import type { Todo } from "../../types/todo"
-import styles from "./Todo.module.css"
+import type { Todo } from '../../types/todo'
+import styles from './Todo.module.css'
 
 interface TodoListPresentationProps {
   todos: Todo[]
 }
 
-const TodoListPresentation = ({
-  todos,
-}: TodoListPresentationProps) => {
+const TodoListPresentation = ({ todos }: TodoListPresentationProps) => {
   return (
     <div className={styles.container}>
       {todos.map((todo) => (

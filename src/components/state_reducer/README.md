@@ -16,13 +16,13 @@ Reducer 함수는 현재 상태와 action을 받아 새로운 상태를 반환�
 function reducer(state, action) {
   switch (action.type) {
     case 'INCREMENT':
-      return { count: state.count + 1 };
+      return { count: state.count + 1 }
     case 'DECREMENT':
-      return { count: state.count - 1 };
+      return { count: state.count - 1 }
     case 'RESET':
-      return { count: 0 };
+      return { count: 0 }
     default:
-      return state;
+      return state
   }
 }
 ```

@@ -1,4 +1,4 @@
-import Toggle from "./Toggle"
+import Toggle from './Toggle'
 
 const ToggleButton = () => {
   return (

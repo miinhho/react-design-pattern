@@ -1,11 +1,10 @@
-import Counter from './Counter';
-import styles from './Counter.module.css';
+import Counter from './Counter'
+import styles from './Counter.module.css'
 
 const DefaultCounter = () => {
   return (
     <div className={styles.container}>
       <section className={styles.section}>
-
         <Counter initialValue={0}>
           {({ count, increment, decrement, reset }) => (
             <div className={styles.counterContainer}>
@@ -24,10 +23,9 @@ const DefaultCounter = () => {
             </div>
           )}
         </Counter>
-
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default DefaultCounter;
+export default DefaultCounter

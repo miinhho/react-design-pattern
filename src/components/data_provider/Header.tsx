@@ -1,5 +1,5 @@
-import Navbar from "./Navbar"
-import { ThemeProvider } from "./ThemeProvider"
+import Navbar from './Navbar'
+import { ThemeProvider } from './ThemeProvider'
 
 const Header = () => {
   return (

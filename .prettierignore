@@ -1,0 +1,9 @@
+**/*.css
+
+pnpm-lock.yaml
+package.json
+
+.prettierrc
+eslint.config.mjs
+
+tsconfig.json

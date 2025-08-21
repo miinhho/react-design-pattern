@@ -1,9 +1,7 @@
-import DefaultAvatar from "./DefaultAvatar"
+import DefaultAvatar from './DefaultAvatar'
 
 const JohnDoe = () => {
-  return (
-    <DefaultAvatar name="John Doe" />
-  )
+  return <DefaultAvatar name="John Doe" />
 }
 
 export default JohnDoe

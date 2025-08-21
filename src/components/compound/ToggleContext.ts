@@ -1,8 +1,10 @@
-import { createContext } from "react";
+import { createContext } from 'react'
 
 interface ToggleContextType {
-  on: boolean;
-  toggle: () => void;
+  on: boolean
+  toggle: () => void
 }
 
-export const ToggleContext = createContext<ToggleContextType | null>(null);
+export const ToggleContext = createContext<ToggleContextType | undefined>(
+  undefined,
+)

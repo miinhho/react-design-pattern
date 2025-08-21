@@ -1,23 +1,23 @@
-import { useReducer } from "react"
-import type { LoginFormAction, LoginFormData } from "./form.type"
-import styles from "./LoginForm.module.css"
+import { useReducer } from 'react'
+import type { LoginFormAction, LoginFormData } from './form.type'
+import styles from './LoginForm.module.css'
 
 const initialState: LoginFormData = {
-  username: "",
-  password: "",
+  username: '',
+  password: '',
   loggedIn: false,
 }
 
 const loginReducer = (_state: LoginFormData, action: LoginFormAction) => {
   switch (action.type) {
-    case "login": {
+    case 'login': {
       return {
         username: action.payload.username,
         password: action.payload.password,
         loggedIn: true,
       }
     }
-    case "logout": {
+    case 'logout': {
       return initialState
     }
     default: {
@@ -32,15 +32,15 @@ const LoginForm = () => {
   const login = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const formData = new FormData(event.currentTarget)
-    const username = formData.get("username") as string
-    const password = formData.get("password") as string
+    const username = formData.get('username') as string
+    const password = formData.get('password') as string
 
     dispatch({
       type: 'login',
       payload: {
         username,
         password,
-      }
+      },
     })
   }
 
@@ -57,16 +57,8 @@ const LoginForm = () => {
         </div>
       ) : (
         <form onSubmit={login} className={styles.form}>
-          <input
-            type="text"
-            name="username"
-            placeholder="이름"
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="비밀번호"
-          />
+          <input type="text" name="username" placeholder="이름" />
+          <input type="password" name="password" placeholder="비밀번호" />
           <button type="submit">로그인</button>
         </form>
       )}

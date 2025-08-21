@@ -1,18 +1,15 @@
-import Avatar, { type AvatarProps } from "./Avatar";
+import Avatar, { type AvatarProps } from './Avatar'
 
 interface DefaultAvatarProps {
-  name: string;
+  name: string
 }
 
 const defaultAvatar = (Component: React.ComponentType<AvatarProps>) => {
   return ({ name }: DefaultAvatarProps) => (
-    <Component
-      description="Hello!"
-      name={name}
-    />
+    <Component description="Hello!" name={name} />
   )
 }
 
-const DefaultAvatar = defaultAvatar(Avatar);
+const DefaultAvatar = defaultAvatar(Avatar)
 
 export default DefaultAvatar

@@ -1,16 +1,16 @@
 export interface LoginFormData {
-  username: string;
-  password: string;
-  loggedIn: boolean;
+  username: string
+  password: string
+  loggedIn: boolean
 }
 
 type LoginAction = {
-  type: "login";
-  payload: Omit<LoginFormData, "loggedIn">;
-};
+  type: 'login'
+  payload: Omit<LoginFormData, 'loggedIn'>
+}
 
 type LogoutAction = {
-  type: "logout";
-};
+  type: 'logout'
+}
 
-export type LoginFormAction = LoginAction | LogoutAction;
+export type LoginFormAction = LoginAction | LogoutAction
