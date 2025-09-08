@@ -1,8 +1,8 @@
-import { use } from 'react'
+import { useContext } from 'react'
 import { ToggleContext } from './ToggleContext'
 
 export const useToggle = () => {
-  const ctx = use(ToggleContext)
+  const ctx = useContext(ToggleContext)
   if (!ctx) {
     throw new Error('useToggle must be used within a ToggleProvider')
   }
