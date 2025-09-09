@@ -18,19 +18,6 @@
 
 7. [Compound](./src/components/compound/README.md)
 
-8. Memoziation
-   - [useCallback](https://ko.react.dev/reference/react/useCallback)
-   - [useMemo](https://ko.react.dev/reference/react/useMemo)
-   - [memo](https://ko.react.dev/reference/react/memo)
-
-9. Lazy import
-   - [lazy](https://ko.react.dev/reference/react/lazy)
-10. Transition
-    - [useTransition](https://ko.react.dev/reference/react/useTransition)
-    - [startTransition](https://ko.react.dev/reference/react/startTransition)
-11. Optimistic UI
-    - [useOptimistic](https://ko.react.dev/reference/react/useOptimistic)
-
 <br>
 
 <img src="https://github.com/miinhho/react-design-pattern/blob/main/public/page.png" width="1000" height="750"></img>
