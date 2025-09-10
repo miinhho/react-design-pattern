@@ -1,9 +1,11 @@
 **/*.css
+**/*.md
+**/*.svg
+**/*.png
+**/*.html
+**/*.json
 
 pnpm-lock.yaml
-package.json
 
 .prettierrc
 eslint.config.mjs
-
-tsconfig.json
