@@ -1,12 +1,12 @@
-import Navbar from './Navbar'
+import HelloButton from './HelloButton'
 import { ThemeProvider } from './ThemeProvider'
 
-const Header = () => {
+const Hello = () => {
   return (
     <ThemeProvider>
-      <Navbar />
+      <HelloButton />
     </ThemeProvider>
   )
 }
 
-export default Header
+export default Hello

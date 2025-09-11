@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import Header from './Header'
+import Hello from './Hello'
 
-const meta: Meta<typeof Header> = {
+const meta: Meta<typeof Hello> = {
   title: 'Components/Data Provider',
-  component: Header,
+  component: Hello,
 }
 
 export default meta
