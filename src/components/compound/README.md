@@ -8,54 +8,14 @@ Compound (컴파운드) 패턴은 상위 컴포넌트를 여러 하위 컴포넌
 
 이 패턴은 특히 재사용 가능한 컴포넌트 라이브러리를 구축할 때 매우 유용합니다.
 
-## `React.Children.map`
-
-자식 컴포넌트들을 순회 처리 하는데에도 컴파운드 패턴을 사용할 수 있습니다.
-
-`React.cloneElement` 를 사용하여 자식 컴포넌트를 복제하여 각각에게 메서드를 넘길 수도 있습니다.
-
-```js
-export const Flyout = (props) => {
-  const [open, toggle] = useState(false)
-
-  return (
-    <div>
-      {React.Children.map(props.children, (child) =>
-        React.cloneElement(child, { open, toggle }),
-      )}
-    </div>
-  )
-}
-```
-
 ## 장점과 단점?
 
 ### 장점
 
+- 컴포넌트 간의 상호작용이 명확히 정의됩니다.
 - 사용하는 쪽에서 동작 구현에 필요한 상태가 드러나지 않아 걱정 없이 사용할 수 있습니다.
-- 자식 컴포넌트들을 일일히 import 할 필요 없이 기능을 이용할 수 있습니다.
 
 ### 단점
 
-- `React.Children.map` 을 사용할 때 쓰는 쪽에서 자식 컴포넌트를 약속된 형태로 넘겨야 하는 제약이 생깁니다.
-
-```js
-import { FlyOut } from './FlyOut'
-
-export default function FlyoutMenu() {
-  return (
-    <FlyOut>
-      {/* div 로 인해 오류가 발생한다! */}
-      <div>
-        <FlyOut.Toggle />
-        <FlyOut.List>
-          <FlyOut.Item>Edit</FlyOut.Item>
-          <FlyOut.Item>Delete</FlyOut.Item>
-        </FlyOut.List>
-      </div>
-    </FlyOut>
-  )
-}
-```
-
-- element 를 복제하는 경우, 복제 대상 컴포넌트가 기존에 갖고 있는 prop 과 이름이 충돌될 수 있습니다. 이 경우 `React.cloneElement` 를 사용할 때 넘어간 값으로 해당 prop 이 덮어써집니다.
+- 컴파운드 패턴을 처음 접하는 개발자에게는 설계 방식과 사용법이 다소 생소할 수 있습니다.
+- 자식 컴포넌트가 부모 컴포넌트의 상태와 메서드에 의존하므로, 부모 컴포넌트의 변경이 자식 컴포넌트에 영향을 미칠 수 있습니다.
